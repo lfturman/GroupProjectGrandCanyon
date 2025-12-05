@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="css/styles.css" />
@@ -18,8 +17,50 @@
     </ul>
   </nav>
   <body>
-    <div class="contactbody">
-      <!-- Put all the page body stuff here, so that way you can customize it, without effecting other pages-->
-    </div>
+    <section class="contactbody">
+      <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions or need more information, fill out the form
+          below.
+        </p>
+
+        <form method="GET" action="simpleForm.html">
+          <label for="fullname">Full Name:</label><br />
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            required
+          /><br /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="text" id="phone" name="phone" /><br /><br />
+
+          <p>Preferred method of contact:</p>
+
+          <label>
+            <input type="radio" name="contact" value="email" /> Email </label
+          ><br />
+
+          <label>
+            <input type="radio" name="contact" value="phone" /> Phone </label
+          ><br /><br />
+
+          <label for="comment">Comments:</label><br />
+          <textarea id="comment" name="comment"></textarea><br /><br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>Â© 2025 Visit The Grand Canyon. All rights reserved.</p>
+    </footer>
   </body>
 </html>
