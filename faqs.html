@@ -19,7 +19,204 @@
   </nav>
   <body>
     <div class="faqbody">
-      <!-- Put all the page body stuff here, so that way you can customize it, without effecting other pages-->
+      <div class="faq-hero">
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about visiting the Grand Canyon</p>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-section">
+          <h3>General Information</h3>
+
+          <div class="faq-item">
+            <div class="faq-question">How deep is the Grand Canyon?</div>
+            <div class="faq-answer">
+              <p>
+                The Grand Canyon is approximately 1 mile (1.6 km) deep at its
+                deepest point. The average depth is about 1 mile, with the
+                canyon stretching 277 miles long and up to 18 miles wide.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How old is the Grand Canyon?</div>
+            <div class="faq-answer">
+              <p>
+                The rocks at the bottom of the Grand Canyon are nearly 2 billion
+                years old, but the canyon itself was carved by the Colorado
+                River over the past 5 to 6 million years.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Which rim should I visit - North or South?
+            </div>
+            <div class="faq-answer">
+              <p>
+                The South Rim is open year-round and is the most visited, with
+                more facilities and viewpoints. The North Rim is higher in
+                elevation, less crowded, and offers a different perspective, but
+                is only open mid-May through mid-October due to snow.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-section">
+          <h3>Planning Your Visit</h3>
+
+          <div class="faq-item">
+            <div class="faq-question">What is the best time to visit?</div>
+            <div class="faq-answer">
+              <p>
+                Spring (March-May) and fall (September-November) offer the best
+                weather with mild temperatures and fewer crowds. Summer can be
+                very hot and crowded, while winter offers fewer visitors but
+                cold temperatures and possible snow.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How much does it cost to enter?</div>
+            <div class="faq-answer">
+              <p>
+                The entrance fee is $35 per vehicle for a 7-day pass, $30 per
+                motorcycle, or $20 per person for those entering on foot or
+                bicycle. An annual pass costs $70.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">How long should I plan to visit?</div>
+            <div class="faq-answer">
+              <p>
+                For a first visit to the South Rim, plan at least one full day.
+                Two to three days allows time for hiking, watching
+                sunrise/sunset, and exploring multiple viewpoints. If you want
+                to hike to the bottom or visit both rims, plan 4-5 days.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Do I need reservations?</div>
+            <div class="faq-answer">
+              <p>
+                You don't need reservations to enter the park, but lodging
+                inside the park should be booked 6-12 months in advance,
+                especially for summer. Backcountry camping permits require
+                reservations and can be obtained up to 4 months in advance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-section">
+          <h3>Hiking & Safety</h3>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Can I hike to the bottom and back in one day?
+            </div>
+            <div class="faq-answer">
+              <p>
+                The National Park Service strongly discourages hiking to the
+                river and back in one day. It's extremely strenuous (16-19 miles
+                round trip with significant elevation change) and dangerous,
+                especially in summer. Many experienced hikers have required
+                rescue attempting this.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">What should I bring for a day hike?</div>
+            <div class="faq-answer">
+              <p>
+                Bring plenty of water (at least 1 liter per 2 hours of hiking),
+                salty snacks, sun protection (hat, sunscreen, sunglasses), a
+                first aid kit, and a map. Wear sturdy hiking boots and layers of
+                clothing. Start early to avoid afternoon heat.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Are there guardrails everywhere?</div>
+            <div class="faq-answer">
+              <p>
+                No. While major viewpoints have railings, many areas along the
+                rim do not. Stay on designated trails and at least 6 feet from
+                the edge. Deaths from falls occur every year, so always be
+                cautious and supervise children closely.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-section">
+          <h3>Wildlife & Nature</h3>
+
+          <div class="faq-item">
+            <div class="faq-question">What animals might I see?</div>
+            <div class="faq-answer">
+              <p>
+                Common wildlife includes mule deer, elk, California condors,
+                ravens, squirrels, and various lizards. Mountain lions and
+                rattlesnakes are present but rarely seen. Never feed or approach
+                wildlife, and maintain a safe distance.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">Is altitude a concern?</div>
+            <div class="faq-answer">
+              <p>
+                The South Rim sits at 7,000 feet elevation and the North Rim at
+                8,000 feet. Some visitors may experience mild altitude sickness.
+                Stay hydrated, take it easy the first day, and be aware of
+                symptoms like headache, nausea, or dizziness.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          &copy; 2025 The Grand Canyon Information Guide. All rights reserved.
+        </p>
+      </footer>
+
+      <script>
+        // FAQ accordion functionality
+        document.querySelectorAll(".faq-question").forEach((question) => {
+          question.addEventListener("click", () => {
+            const answer = question.nextElementSibling;
+            const isActive = answer.classList.contains("active");
+
+            // Close all answers
+            document
+              .querySelectorAll(".faq-answer")
+              .forEach((a) => a.classList.remove("active"));
+            document
+              .querySelectorAll(".faq-question")
+              .forEach((q) => q.classList.remove("active"));
+
+            // Open clicked answer if it wasn't active
+            if (!isActive) {
+              answer.classList.add("active");
+              question.classList.add("active");
+            }
+          });
+        });
+      </script>
     </div>
   </body>
 </html>
