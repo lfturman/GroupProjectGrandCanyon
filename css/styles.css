@@ -7,11 +7,16 @@ html,
 body {
   font-family: Roboto, sans-serif;
   background-color: #333;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
+
 h1 {
   color: #f4a261;
   text-align: center;
   border-bottom: 2px solid #f4a261;
+  margin-bottom: 10px;
   padding-bottom: 10px;
 }
 h2,
@@ -60,7 +65,7 @@ nav a:hover {
 .logo {
   padding-top: 10px;
   color: #f4a261;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   justify-content: center;
 }
@@ -220,8 +225,6 @@ nav a:hover {
 /* History Page Styles */
 
 .historybody {
-  /* You can customize your body for the history page here, without effecting other pages */
-  height: 100%;
   line-height: 1.6;
   margin: 0 auto;
   max-width: 1000px;
@@ -362,6 +365,15 @@ li {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Activites Page CSS */
+
+.activitieshero {
+  height: 600px;
+  width: 100%;
+  background-image: url(../images/grand_canyon_park_1.webp);
+  background-size: cover;
+  background-position: center;
+}
 .act1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   justify-content: space-evenly;
@@ -642,4 +654,34 @@ footer p {
   .faq-section h3 {
     font-size: 1.5rem;
   }
+}
+
+/*API Map Page CSS*/
+
+.mapbody {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.maptext {
+  width: 40%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+.mapblock {
+  height: 500px;
+  width: 500px;
+  margin: 0;
+  padding: 0;
 }
